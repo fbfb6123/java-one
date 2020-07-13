@@ -1,3 +1,5 @@
+// 第4章 配列の作成と使用
+
 public class Main {
   public static void main(String[] args) {
     int[] array = new int[0];
