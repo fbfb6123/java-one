@@ -1,18 +1,29 @@
-// 第5章 ループ構造while文
-
 public class Main {
   public static void main(String[] args) {
-    int a = 11;
-    int b = 0;
-    while ( b < 5 ) {
-      if ( 5 < 0 ) {
-        System.out.println(b);
-      }
-      a--;
-      b++;
-    }
+    int[] array = new int[0];
+    System.out.println(array);
   }
 }
+
+
+
+
+
+// 第5章 ループ構造while文
+
+// public class Main {
+//   public static void main(String[] args) {
+//     int a = 11;
+//     int b = 0;
+//     while ( b < 5 ) {
+//       if ( 5 < 0 ) {
+//         System.out.println(b);
+//       }
+//       a--;
+//       b++;
+//     }
+//   }
+// }
 
 
 
