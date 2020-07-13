@@ -1,10 +1,14 @@
 public class Item {
-  private int num = 10;
-  public void setNum(int num) {
-    this.num = num;
-  }
-  public int getNum() {
-    return this.num;
+  public static void main(String[] args) {
+    int a = 11;
+    int b = 0;
+    while( b < 5) {
+      if(5 < 0) {
+        System.out.println(b);
+      }
+      a--;
+      b++;
+    }
   }
 }
 
