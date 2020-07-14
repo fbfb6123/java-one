@@ -1,9 +1,15 @@
-// 第4章 配列の作成と使用
+// 第5章 ２重ループ構造
 
 public class Main {
   public static void main(String[] args) {
-    int[] array = new int[0];
-    System.out.println(array);
+    int array[][] = new int[][] {{1,2},{2,3,4}};
+    int total = 0;
+    for (int i = 0; i < array.length; i++) {
+      for (int j = i; j < array[i].length; j++) {
+        total += array[i][j];
+      }
+    }
+    System.out.println(total);
   }
 }
 
@@ -27,6 +33,17 @@ public class Main {
 //   }
 // }
 
+
+
+
+// 第4章 配列の作成と使用
+
+// public class Main {
+//   public static void main(String[] args) {
+//     int[] array = new int[0];
+//     System.out.println(array);
+//   }
+// }
 
 
 // public class Main {
