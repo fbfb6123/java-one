@@ -6,10 +6,20 @@ public class Main {
                                 //0 1   2 3 4
     int total = 0;
     for (int i = 0; i < array.length; i++) {
-                  // i < 4
+                  // i < 3
+
+                  
       for (int j = i; j < array[i].length; j++) {
-                 //1  1  <  2               1+1=2 1+1=2 1+1=2  合計6
+                 //0  0 <  2               0+1=1
+                 //0  1 <  2               1+1=2    ここまでが１回目の内側のループ
+
+
+
+
         total += array[i][j];
+        //0 + 0+1=1
+        //1 + 1+2=3     １回目
+
       }
     }
     System.out.println(total);
