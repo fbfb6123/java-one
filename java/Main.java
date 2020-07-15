@@ -2,14 +2,23 @@
 
 public class Main {
   public static void main(String[] args) {
-    int array[][] = new int[][] {{1,2},{2,3,4}};
-                                //0 1   2 3 4
+    int array[][] = new int[][] {{1,2},{3,4}};
+                                //0 1   2 3 
     int total = 0;
     for (int i = 0; i < array.length; i++) {
                  // 0 < 2     １回目ループ
 
                   
       for (int j = i; j < array[i].length; j++) {
+                 //0  0 < 2                0+1=1
+                 //0  1 < 2                1+1=2
+                 //1  1 < 2                2+1=3
+
+
+
+
+
+
                  //0  0 <  2               0+1=1
                  //0  1 <  2               1+1=2    ここまでが１回目の内側のループ
                  //1  1 <  3               2+1=3
@@ -17,6 +26,14 @@ public class Main {
 
 
         total += array[i][j];
+        //0 = 0+1=1
+        //1 = 1+2=3
+        //3 = 3+4 =7
+
+
+
+
+
         //0 = 0+1=1
         //1 = 1+2=3     １回目
         //3 = 3+3=6     ２回目 
