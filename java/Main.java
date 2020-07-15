@@ -2,10 +2,13 @@
 
 public class Main {
   public static void main(String[] args) {
-    int array[][] = new int[][] {{1,2},{3,4}};
+    int array[][] = new int[][] {{1,2},{2,3,4}};
+                                //0 1   2 3 4
     int total = 0;
     for (int i = 0; i < array.length; i++) {
+                  // i < 4
       for (int j = i; j < array[i].length; j++) {
+                 //1  1  <  2               1+1=2 1+1=2 1+1=2  合計6
         total += array[i][j];
       }
     }
