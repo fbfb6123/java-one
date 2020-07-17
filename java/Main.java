@@ -8,6 +8,7 @@ public class Main {
     for (int i = 0; i < array.length; i++) {
                  // 0 < 2     １回目ループ
 
+
                   
       for (int j = i; j < array[i].length; j++) {
                  //0  0 < 2                0+1=1
