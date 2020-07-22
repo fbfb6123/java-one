@@ -14,7 +14,7 @@ public class Main {
       val = 10;
       return val;
     } finally {
-      val += 10;
+      val += 20;
     }
     return val;
   }
