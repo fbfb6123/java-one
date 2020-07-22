@@ -1,43 +1,69 @@
-// 第5章 ２重ループ構造
+// 第８章 try文 catch文 finaily文
 
 public class Main {
   public static void main(String[] args) {
-    int array[][] = new int[][] {{1,2},{2,3,4}};
-                                //0 1   0 1 2 
-    int total = 0;
-    for (int i = 0; i < array.length; i++) {
-                 // 0 < 2     １回目ループ
-
-               
-                  
-      for (int j = i; j < array[i].length; j++) {
-                 //0  0 < 2                0+1=1
-                 //0  1 < 2                1+1=2
-                 //1  1 < 2                2+1=3
-
-
-
-                 //0  0 <  2               0+1=1
-                 //0  1 <  2               1+1=2    ここまでが１回目の内側のループ
-                 //1  1 <  3               2+1=3
-                 //1  2 <  3               3+1=4
-
-
-        total += array[i][j];
-        //{{1,2},{2,3,4}};
-        //  0 1   0 1 2
-
-
-        //0 = 0+1=1     １回目  この時点ではjは0なので配列から1を取り出している
-        //1 = 1+2=3     j = 1になるから2を取り出している
-        //3 = 3+3=6     ２回目 j = 1になるから3を取り出している
-        //6 = 6+4=10    j = 2になるから4を取り出している
-
-      }
+    int result = sample();
+    System.out.println(result);
+  }
+  private static int sample() {
+    int val = 0;
+    try {
+      String[] array = {"A","B","C"};
+      System.out.println(array[3]);
+    } catch (RuntimeException e) {
+      val = 10;
+      return val;
+    } finally {
+      val += 10;
     }
-    System.out.println(total);
+    return val;
   }
 }
+
+
+
+
+
+// 第5章 ２重ループ構造
+
+// public class Main {
+//   public static void main(String[] args) {
+//     int array[][] = new int[][] {{1,2},{2,3,4}};
+//                                 //0 1   0 1 2 
+//     int total = 0;
+//     for (int i = 0; i < array.length; i++) {
+//                  // 0 < 2     １回目ループ
+
+
+
+//       for (int j = i; j < array[i].length; j++) {
+//                  //0  0 < 2                0+1=1
+//                  //0  1 < 2                1+1=2
+//                  //1  1 < 2                2+1=3
+
+
+
+//                  //0  0 <  2               0+1=1
+//                  //0  1 <  2               1+1=2    ここまでが１回目の内側のループ
+//                  //1  1 <  3               2+1=3
+//                  //1  2 <  3               3+1=4
+
+
+//         total += array[i][j];
+//         //{{1,2},{2,3,4}};
+//         //  0 1   0 1 2
+
+
+//         //0 = 0+1=1     １回目  この時点ではjは0なので配列から1を取り出している
+//         //1 = 1+2=3     j = 1になるから2を取り出している
+//         //3 = 3+3=6     ２回目 j = 1になるから3を取り出している
+//         //6 = 6+4=10    j = 2になるから4を取り出している
+
+//       }
+//     }
+//     System.out.println(total);
+//   }
+// }
 
 
 
