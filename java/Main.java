@@ -9,7 +9,7 @@ public class Main {
     int val = 0;
     try {
       String[] array = {"A","B","C"};
-      System.out.println(array[3]);
+      System.out.println(array[2]);
     } catch (RuntimeException e) {
       val = 10;
       return val;
