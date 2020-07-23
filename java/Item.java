@@ -11,11 +11,14 @@ public class Item {
     }
     return this.num == obj.num;
   }
-  public boolean equals(Object obj){
-    Item s = (Item) obj;
-    return s.num == this.num;
-  }
+  // public boolean equals(Object obj){
+  //   Item s = (Item) obj;
+  //   return s.num == this.num;
+  // }
 }
+
+// equalsメソッドはオーバーライドして使うことが前提
+// 
 
 
 
