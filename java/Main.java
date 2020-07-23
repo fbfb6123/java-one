@@ -1,24 +1,36 @@
-// 第８章 try文 catch文 finaily文
+// 第3章 同一性と同値性
 
 public class Main {
   public static void main(String[] args) {
-    int result = sample();
-    System.out.println(result);
-  }
-  private static int sample() {
-    int val = 0;
-    try {
-      String[] array = {"A","B","C"};
-      System.out.println(array[3]);
-    } catch (RuntimeException e) {
-      val = 10;
-      return val;
-    } finally {
-      val += 20;
-    }
-    return val;
+    Item a = new Item(10,"a");
+    Item b = new Item(10,"b");
+    System.out.println(a.equals(b));
   }
 }
+
+
+
+// 第８章 try文 catch文 finaily文
+
+// public class Main {
+//   public static void main(String[] args) {
+//     int result = sample();
+//     System.out.println(result);
+//   }
+//   private static int sample() {
+//     int val = 0;
+//     try {
+//       String[] array = {"A","B","C"};
+//       System.out.println(array[3]);
+//     } catch (RuntimeException e) {
+//       val = 10;
+//       return val;
+//     } finally {
+//       val += 20;
+//     }
+//     return val;
+//   }
+// }
 
 
 
