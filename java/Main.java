@@ -2,8 +2,8 @@
 
 public class Main {
   public static void main(String[] args) {
-    Item a = new Item(10,"a");
-    Item b = new Item(10,"b");
+    Object a = new Item(10);
+    Object b = new Item(10);
     System.out.println(a.equals(b));
   }
 }

@@ -2,22 +2,38 @@
 
 public class Item {
   private int num;
-  private String name;
-  public Item(int num, String name) {
+  public Item(int num) {
     this.num = num;
-    this.name = name;
   }
-  public boolean equals(Object obj) {
+  public boolean equals(Item obj) {
     if (obj == null) {
       return false;
     }
-    if (obj instanceof Item) {
-      Item s = (Item) obj;
-      return s.num == this.num;
-    }
-    return false;
+    return this.num == obj.num;
   }
 }
+
+
+
+
+// public class Item {
+//   private int num;
+//   private String name;
+//   public Item(int num, String name) {
+//     this.num = num;
+//     this.name = name;
+//   }
+//   public boolean equals(Object obj) {
+//     if (obj == null) {
+//       return false;
+//     }
+//     if (obj instanceof Item) {
+//       Item s = (Item) obj;
+//       return s.num == this.num;
+//     }
+//     return false;
+//   }
+// }
 
 // public class Item {
 //   public static void main(String[] args) {
