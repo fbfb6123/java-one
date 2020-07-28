@@ -1,12 +1,22 @@
-// 第3章 同一性と同値性
+// 第６章 オーバーロッドとthis(コンストラクタ内の同名のコンストラクタを呼び出す処理)
 
 public class Main {
   public static void main(String[] args) {
-    Object a = new Item(10);
-    Object b = new Item(10);
-    System.out.println(a.equals(b));
+    Item s = new Item();
   }
 }
+
+
+
+// 第3章 同一性と同値性
+
+// public class Main {
+//   public static void main(String[] args) {
+//     Object a = new Item(10);
+//     Object b = new Item(10);
+//     System.out.println(a.equals(b));
+//   }
+// }
 
 
 
@@ -14,10 +24,10 @@ public class Main {
 
 // public class Main {
 //   public static void main(String[] args) {
-//     int result = sample();
+//     int result = Item();
 //     System.out.println(result);
 //   }
-//   private static int sample() {
+//   private static int Item() {
 //     int val = 0;
 //     try {
 //       String[] array = {"A","B","C"};
@@ -160,8 +170,8 @@ public class Main {
 
 
 
-// import static ex6.Sample.num;
-// import static ex6.Sample.print;
+// import static ex6.Item.num;
+// import static ex6.Item.print;
 
 
 // public class Main {
