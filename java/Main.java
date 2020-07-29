@@ -1,10 +1,10 @@
 // 第６章 オーバーロッドとthis(コンストラクタ内の同名のコンストラクタを呼び出す処理)
 
-public class Main {
-  public static void main(String[] args) {
-    Item s = new Item();
-  }
-}
+// public class Main {
+//   public static void main(String[] args) {
+//     Item s = new Item();
+//   }
+// }
 
 
 
@@ -41,6 +41,28 @@ public class Main {
 //     return val;
 //   }
 // }
+
+
+// try文 catch文 finaily文 ネストした場合
+
+public class Main {
+  public static void main(String[] args) {
+    try {
+      try {
+        String[] array = {"A","B","C"};
+        System.out.println(array[3]);
+      } catch (ArrayIndexOutOfBoundsException e) {
+        System.out.println("D");
+      }finally {
+        System.out.println("E");
+      }
+    } catch (ArrayIndexOutOfBoundsException e) {
+      System.out.println("F");
+    } finally {
+      System.out.println("G");
+    }
+  }
+}
 
 
 
