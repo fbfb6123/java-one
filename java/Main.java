@@ -44,25 +44,26 @@
 
 
 // try文 catch文 finaily文 ネストした場合
+// returnの場合は値を戻す前にfinallyが実行される
 
-public class Main {
-  public static void main(String[] args) {
-    try {
-      try {
-        String[] array = {"A","B","C"};
-        System.out.println(array[3]);
-      } catch (ArrayIndexOutOfBoundsException e) {
-        System.out.println("D");
-      }finally {
-        System.out.println("E");
-      }
-    } catch (ArrayIndexOutOfBoundsException e) {
-      System.out.println("F");
-    } finally {
-      System.out.println("G");
-    }
-  }
-}
+// public class Main {
+//   public static void main(String[] args) {
+//     try {
+//       try {
+//         String[] array = {"A","B","C"};
+//         System.out.println(array[3]);
+//       } catch (ArrayIndexOutOfBoundsException e) {
+//         System.out.println("D");
+//       }finally {
+//         System.out.println("E");
+//       }
+//     } catch (ArrayIndexOutOfBoundsException e) {
+//       System.out.println("F");
+//     } finally {
+//       System.out.println("G");
+//     }
+//   }
+// }
 
 
 
